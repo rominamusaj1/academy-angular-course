@@ -13,6 +13,7 @@ import { ClickDirective } from './click.directive';
 import { EventBindingExamplesComponent } from './event-binding-examples.component';
 import { SizerComponent } from './size.component';
 import { TwoWayBindingExamplesComponent } from './two-way-binding-examples.component';
+import { StyleBindingExamplesComponent } from './style-binding-examples.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { TwoWayBindingExamplesComponent } from './two-way-binding-examples.compo
     ClickDirective,
     EventBindingExamplesComponent,
     SizerComponent,
-    TwoWayBindingExamplesComponent
+    TwoWayBindingExamplesComponent,
+    StyleBindingExamplesComponent
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],
