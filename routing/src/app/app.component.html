@@ -1,0 +1,10 @@
+<h1 class="title">ikubINFO Academy Router</h1>
+<nav>
+  <a routerLink="/crisis-center" routerLinkActive="active">Crisis Center</a>
+  <a routerLink="/superheroes" routerLinkActive="active">Heroes</a>
+  <a [routerLink]="[{ outlets: { popup: ['compose'] } }]">Contact</a>
+</nav>
+<div>
+  <router-outlet></router-outlet>
+</div>
+<router-outlet name="popup"></router-outlet>
