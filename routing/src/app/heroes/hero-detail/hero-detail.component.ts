@@ -16,16 +16,18 @@ export class HeroDetailComponent implements OnInit, OnDestroy {
   constructor(
     private route: ActivatedRoute,
     private router: Router,
-    private service: HeroService
-  ) {}
+    private service: HeroService 
+  ) {
+    
+  }
 
   ngOnInit() {
     this.subscription = this.route.paramMap
-      .pipe()
-      .subscribe(
-        (params: ParamMap) =>
-          (this.hero = this.service.getHero(params.get('id')))
-      );
+    .subscribe(
+      (params: ParamMap) =>
+        (this.hero = this.service.getHero(params.get('id')))
+    );
+
   }
 
   ngOnDestroy() {
